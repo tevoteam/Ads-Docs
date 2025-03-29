@@ -15,7 +15,7 @@ A powerful Android advertising library that supports multiple ad networks includ
 //Build.gradle(project)
 repositories {
     maven {
-        url "https://maven.pkg.github.com/JsonDevLib/lib-ads"
+        url "https://maven.pkg.github.com/tevoteam/tevo-ads"
         credentials(HttpHeaderCredentials) {
             name = "thanhluu"
             value = "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"
