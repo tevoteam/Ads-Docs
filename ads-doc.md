@@ -18,7 +18,7 @@ repositories {
         url "https://maven.pkg.github.com/tevoteam/tevo-ads"
         credentials(HttpHeaderCredentials) {
             name = "thanhluu"
-            value = "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"
+            value = ""
         }
         authentication {
             header(HttpHeaderAuthentication)
