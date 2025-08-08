@@ -197,3 +197,42 @@ sealed class NativePreloadState {
     data object Error : NativePreloadState()
 
 }
+
+ // NativeAdsManager.INSTANCE.preload(
+ //                this,
+ //                BuildConfig.N001,
+ //                SharePrefUtils.getBoolean(AdsConstant.N001, true),
+ //                NativeAdsManager.INSTANCE.getLayoutNative(isSmallLayout, false),
+ //                AdsConstant.AD_PLACEMENT_LANGUAGE_CTA_BOTTOM,
+ //                1
+ //        );
+
+
+
+ // NativeAdConfig config = new NativeAdConfig(
+ //                BuildConfig.N001,
+ //                "",
+ //                SharePrefUtils.getBoolean(AdsConstant.N001, true),
+ //                true,
+ //                NativeAdsManager.INSTANCE.getLayoutNative(isSmallLayout(), false),
+ //                AdsConstant.AD_PLACEMENT_LANGUAGE_CTA_BOTTOM
+ //        );
+ //        nativeAdHelper = new NativeAdHelper(this,this, config);
+ //        nativeAdHelper.setAdVisibility(AdOptionVisibility.GONE);
+
+ //        nativeAdHelper.setNativeContentView(frAds);
+ //        nativeAdHelper.setShimmerLayoutView(shimmerFrameLayout);
+ //        NativeAdsManager.INSTANCE.getOrAwaitNative(
+ //                this,
+ //                BuildConfig.N001,
+ //                NativeAdsManager.INSTANCE.getLayoutNative(isSmallLayout(), false),
+ //                AdsConstant.AD_PLACEMENT_LANGUAGE_CTA_BOTTOM,
+ //                ad -> {
+ //                    if (ad != null) {
+ //                        nativeAdHelper.requestAds(new NativeAdParam.Ready(ad));
+ //                    } else {
+ //                        nativeAdHelper.requestAds(NativeAdParam.Request.INSTANCE);
+
+ //                    }
+ //                    return Unit.INSTANCE;
+ //                });
