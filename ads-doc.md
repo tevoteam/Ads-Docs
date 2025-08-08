@@ -28,7 +28,7 @@ repositories {
 
 Build.gradle(app)
 dependencies {
-    implementation 'com.tevo:tevo-ads:0.0.2'
+    implementation 'com.tevo:tevo-ads:0.0.9-alpha06'
 }
 ```
 ### init() Adslib 
