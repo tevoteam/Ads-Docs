@@ -267,6 +267,47 @@ RewardAdHelper.getInstance("reward_home").requestInterAds(this, object : RewardA
 })
 ```
 
+```
+### Rerward Inter ads 
+```kotlin
+private val rewardInterAdHelper by lazy {
+        val rewardAdConfig = RewardInterAdConfig(
+            idAds = "ca-app-pub-3940256099942544/5354046379",
+            canReloadAds = false,
+            canShowAds = true,
+            adPlacement = "reward_inter"
+        )
+        com.ads.admob.helper.reward.RewardInterAdHelper(
+            this, this, rewardAdConfig
+        )
+    }
+
+//Register Reward Inter Ad Listener
+rewardInterAdHelper.registerAdListener(object : RewardInterAdCallBack {
+            override fun onAdLoaded(data: ContentAd.AdmobAd.ApRewardInterAd) {}
+
+            override fun onAdFailedToLoad(loadAdError: LoadAdError) {}
+
+            override fun onAdClicked() {}
+
+            override fun onAdImpression() {}
+
+            override fun onAdFailedToShow(adError: AdError) {}
+
+            override fun onAdsDismiss() {}
+
+            override fun onEarnedReward() {}
+
+            override fun onAdsShowed() {}
+        })
+
+//Request Reward Inter
+rewardInterAdHelper.requestAds(RewardAdParam.Request)
+
+//show Rerward Inter
+rewardInterAdHelper.requestAds(RewardAdParam.ShowAd)
+```
+
 ### Native ads
 ```kotlin
 private val nativeAdHelper by lazy {
