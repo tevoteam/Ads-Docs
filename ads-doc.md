@@ -267,7 +267,6 @@ RewardAdHelper.getInstance("reward_home").requestInterAds(this, object : RewardA
 })
 ```
 
-```
 ### Rerward Inter ads 
 ```kotlin
 private val rewardInterAdHelper by lazy {
